@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: lightblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container {
+position: relative;
+width:100% ;
+max-width: 1000px;
+min-height: 100px;
+background: #fff;
+margin: 50px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+box-shadow: 0 35px 55px rgba(0,0,0,0.1) ;
+}
+
+.container .left_side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+   
+}
+
+.Profile_Info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.Profile_Info .imgbox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Profile_Info .imgbox img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.Profile_Info h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform:uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.Profile_Info h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.Contact_Info {
+    padding-top: 40px;
+
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.Contact_Info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.Contact_Info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #003147;
+}
+
+.Contact_Info ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.Contact_Info.Education li {
+    margin-bottom: 15px;
+    
+}
+
+.Contact_Info.Education h5 {
+    color: #03a9f4;
+    font-weight: 500;
+    
+}
+
+.Contact_Info.Education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+.Contact_Info.Education h4 {
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+.Contact_Info.Language .Percentage {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+       
+}
+
+.Contact_Info.Language .Percentage div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+       
+}
+
+.container .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.About {
+    margin-bottom: 50px;
+}
+
+.About:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+color: #333;
+
+}
+
+.About .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.About .box .Worked_Years {
+    min-width: 150px;
+}
+
+.About .box .Worked_Years h5 {
+    color: #848c90;
+    font-weight: 600;
+}
+
+.About .box .text h4 {
+    text-transform: uppercase;
+    color: #003147;
+    font-size: 16px;
+}
+
+.About_Skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.About_Skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.About_Skills .box .Percentage {
+    position:relative;
+    width: 100%;
+    height: 5px;
+    background: #cecece;    
+    
+    
+ }
+
+ .About_Skills .box .Percentage div {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:#3f0965;
+   
+}
+
+.About_Hobbies {
+    padding-top: 3em; 
+    
+ }
+.About_Hobbies ul{
+   display: grid;
+   grid-template-columns: repeat(4,1fr); 
+   
+}
+
+.About_Hobbies ul li {
+    list-style: none;
+    color: #00000033;
+    font-weight: 500;
+    margin: 10px 0;
+ }
+ 
+ .About_Hobbies ul li .fa {
+    color: #e49022;
+    font-size: 18px;
+    width: 20px;
+ }
+ 
+ .About .resumen {
+    text-align: justify;
+    font-size: 0.9em ; /* Ajusta el tamaño de fuente relativo al tamaño global */
+}
